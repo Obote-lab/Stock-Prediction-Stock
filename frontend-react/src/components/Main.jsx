@@ -1,5 +1,5 @@
 import React from 'react'
-import Buttons from './Buttons';
+import Buttons from './Buttons'
 
 const Main = () => {
   return (
@@ -19,10 +19,9 @@ const Main = () => {
             used by stock analysts, to inform trading and investments decisions.
           </p>
 
-          <Buttons text="Login"  class="btn-outline-info"/>
-
+          <Buttons text="Login" class="btn-outline-info" />
         </div>
-      </div>
+      </div>   
     </>
   );
 }
