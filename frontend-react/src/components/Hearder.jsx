@@ -12,7 +12,7 @@ const Hearder = () => {
     localStorage.removeItem('accessToken');
     localStorage.removeItem('refreshToken');
     setLoggedIn(false)
-    console.log('Logged out');
+    console.log('Logged out ');
     
     navigate('/login')
   }
@@ -27,7 +27,11 @@ const Hearder = () => {
 
         <div>
           {isLoggedIn ? (
-            <button className='btn btn-outline-danger' onClick={handleLogout}>Logout</button>
+            <>
+               <Buttons text='Dashboard' class='btn-info' url='/dashboard' />
+              &nbsp;
+              <button className='btn btn-outline-danger' onClick={handleLogout}>Logout</button>
+            </>
           ) : (
             <>
               <Buttons text="Login" class="btn-outline-info" url="/login" />
